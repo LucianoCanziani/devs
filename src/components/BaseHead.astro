@@ -12,6 +12,7 @@ export interface Props {
 }
 
 const { title, description, image,author,tags = '/placeholder-social.jpg' } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!-- Global Metadata -->
@@ -26,8 +27,10 @@ const { title, description, image,author,tags = '/placeholder-social.jpg' } = As
 <meta name="description" content={description} />
 <meta name="keywords" content={tags}>
 <meta name="author" content={author}>
+<meta property="og:url" content={canonicalURL.href} />
 
 <!-- Open Graph / Facebook -->
+
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
