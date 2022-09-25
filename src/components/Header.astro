@@ -12,9 +12,9 @@ import { SITE_TITLE } from "../config";
   <nav class="NavBar">
     <HeaderLink href="/"><h1>operationDev</h1></HeaderLink>
     <div>
-      <HeaderLink href="https://devblogger300.netlify.app/">Home</HeaderLink>
-      <HeaderLink href="https://devblogger300.netlify.app/blog/">Blog</HeaderLink>
-      <HeaderLink href="https://devblogger300.netlify.app/about/">About</HeaderLink>
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
     </div>
   </nav>
 </header>
@@ -22,12 +22,47 @@ import { SITE_TITLE } from "../config";
   header {
     margin: 0em 0 2em;
   }
+  header div{
+    white-space: nowrap;
+  }
   h2 {
     margin: 0.5em 0;
+  }
+  a {
+    position: relative;
+    color: #1a202a;
+    text-decoration: none;
+    padding-bottom: 8px;
+  }
+
+  a:hover {
+    color: #0a0b0f;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #1a202a;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  a:hover::before {
+    transform: scaleX(1);
   }
   .NavBar {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+  @media only screen and (max-width: 780px) {
+    header {
+    margin: 0em;
+  }
+      }
 </style>

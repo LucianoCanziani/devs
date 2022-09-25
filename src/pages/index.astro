@@ -27,6 +27,9 @@ const latest = posts.slice(0, 4);
         display: grid;
         grid-template-columns: 51% 51%;
       }
+      section a {
+        color: #1a202a;
+      }
       article {
         position: relative;
         display: flex;
@@ -49,6 +52,20 @@ const latest = posts.slice(0, 4);
       article h3 {
         margin: 0px;
       }
+      @media only screen and (max-width: 780px) {
+        .articles-cont {
+          display: grid;
+          grid-template-columns: 100%;
+        }
+        article {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin-bottom: 25px;
+        width: 100%;
+      }
+      }
     </style>
   </head>
 
@@ -70,17 +87,19 @@ const latest = posts.slice(0, 4);
               <article>
                 <a href={post.url} />
                 <img src={post.frontmatter.heroImage} class="blogImage" />
-                <h3>{post.frontmatter.title}</h3>
-                <time datetime={post.frontmatter.pubDate}>
-                  {new Date(post.frontmatter.pubDate).toLocaleDateString(
-                    "en-us",
-                    {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    }
-                  )}
-                </time>
+                <div>
+                  <h3>{post.frontmatter.title}</h3>
+                  <time datetime={post.frontmatter.pubDate}>
+                    {new Date(post.frontmatter.pubDate).toLocaleDateString(
+                      "en-us",
+                      {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      }
+                    )}
+                  </time>
+                </div>
               </article>
             ))
           }
