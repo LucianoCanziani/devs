@@ -22,7 +22,7 @@ const {
 } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const defineImage = image ?? '/placeholder-social.jpg';
-const postImage = `https://daily-dev-tips.com${defineImage}`;
+const postImage = `https://devblogger300.netlify.app/${defineImage}`;
 ---
 
 <!-- Global Metadata -->
@@ -37,12 +37,12 @@ const postImage = `https://daily-dev-tips.com${defineImage}`;
 <meta name="description" content={description} />
 <meta name="keywords" content={tags} />
 <meta name="author" content={author} />
-<meta property="og:url" content={canonicalURL.href} />
+
 
 <!-- Open Graph / Facebook -->
 
 <meta property="og:type" content="website" />
-<meta property="og:url" content={Astro.url} />
+<meta property="og:url" content={canonicalURL.href} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={postImage} />
