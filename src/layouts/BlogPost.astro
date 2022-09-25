@@ -25,7 +25,7 @@ const {
     author,
     updatedDate,
     heroImage,
-    imgAlt
+    imgAlt,
   },
 } = Astro.props;
 ---
@@ -45,6 +45,11 @@ const {
         font-size: 2em;
         margin: 0.25em 0 0;
       }
+      .author-date{
+        display: flex;
+        align-items: center;
+}
+      
       hr {
         border-top: 1px solid #ddd;
         margin: 1rem 0;
@@ -61,10 +66,16 @@ const {
     <Header />
     <main>
       <article>
-        {heroImage && <img width="100%" height="auto" src={heroImage} alt="" />}
+        {
+          heroImage && (
+            <img width="100%" height="auto" src={heroImage} alt="imgAlt" />
+          )
+        }
         <h1 class="title">{title}</h1>
-        {author && <p>{author} /</p>}
-        {pubDate && <time>{pubDate}</time>}
+        <div class="author-date">
+          {author && <p>{author}</p>}
+          {pubDate && <time> | {pubDate}</time>}
+        </div>
         {
           updatedDate && (
             <div>
