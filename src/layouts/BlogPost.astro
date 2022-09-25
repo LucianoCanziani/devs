@@ -12,6 +12,7 @@ export interface Props {
     updatedDate?: string;
     heroImage?: string;
     tags?: string;
+    imgAlt?: string;
   };
 }
 
@@ -24,6 +25,7 @@ const {
     author,
     updatedDate,
     heroImage,
+    imgAlt
   },
 } = Astro.props;
 ---
@@ -35,6 +37,7 @@ const {
       description={description}
       tags={tags}
       author={author}
+      imagealt={imgAlt}
     />
     <style>
       .title {
