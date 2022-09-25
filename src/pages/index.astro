@@ -19,13 +19,14 @@ const latest = posts.slice(0, 4);
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
-      ul {
-        list-style-type: none;
-        padding: unset;
+      h1 {
+        font-size: 40px;
+        font-family: "Noto Sans JP", sans-serif;
       }
       .articles-cont {
         display: grid;
-        grid-template-columns: 51% 51%;
+        grid-template-columns: 48% 48%;
+        gap: 4%;
       }
       section a {
         color: #1a202a;
@@ -34,8 +35,7 @@ const latest = posts.slice(0, 4);
         position: relative;
         display: flex;
         flex-direction: column;
-        width: 350px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
       }
       article a {
         width: 100%;
@@ -43,7 +43,7 @@ const latest = posts.slice(0, 4);
         position: absolute;
       }
       article div img {
-        width: 350px;
+        width: 100%;
       }
       article time {
         font-style: italic;
@@ -58,13 +58,14 @@ const latest = posts.slice(0, 4);
         .articles-cont {
           display: grid;
           grid-template-columns: 100%;
+
         }
         article {
           position: relative;
           display: flex;
           flex-direction: row-reverse;
           justify-content: space-between;
-          margin-bottom: 25px;
+          margin-bottom: 0px;
           width: 100%;
         }
         .image-cube {
@@ -94,10 +95,11 @@ const latest = posts.slice(0, 4);
     <Header title={SITE_TITLE} />
     <main>
       <section>
-        <h1>Hi there, I'm Luciano Canziani 👋</h1>
+        <h1>Operation Dev: First, solve the problem. Then, write the post.</h1>
         <p>
-          Welcome to "Site Name"! In here you'll find my journey as a developer.
-          From informative, tutorials to a bit of personal advice.
+          Hi there, I'm Luciano Canziani 👋! In here you'll find my journey as a
+          developer. From informative, tutorials to a bit of personal
+          experience.
         </p>
       </section>
       <section>

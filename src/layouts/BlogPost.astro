@@ -42,22 +42,39 @@ const {
     />
     <style>
       .title {
-        font-size: 2em;
+        font-size: 35px;
+        font-family: "Noto Sans JP", sans-serif;
         margin: 0.25em 0 0;
       }
-      .author-date{
+      .author-date {
         display: flex;
         align-items: center;
-}
-      
+      }
+      .author-date p {
+        margin: 0px;
+
+        margin-right: 5px;
+      }
+
+      p {
+        font-family: "Open Sans", sans-serif;
+      }
+
       hr {
-        border-top: 1px solid #ddd;
+        border-top: 1px solid #1a202a89;
         margin: 1rem 0;
       }
-      .img-center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+     
+      article {
+        padding: 0px 15px;
+      }
+      ul.a {
+        list-style-type: circle black;
+      }
+      .table-content-item{
+        color: #1a202a;
+        font-size: 18px;
+        font-weight: 550;
       }
     </style>
   </head>
@@ -76,13 +93,13 @@ const {
           {author && <p>{author}</p>}
           {pubDate && <time> | {pubDate}</time>}
         </div>
-        {
+        {/* 
           updatedDate && (
             <div>
               Last updated on <time>{updatedDate}</time>
             </div>
           )
-        }
+        */}
         <hr />
         <slot />
       </article>
