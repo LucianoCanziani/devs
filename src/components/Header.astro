@@ -1,23 +1,33 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../config';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../config";
+/*
+<h2>
+		{SITE_TITLE}
+	</h2>
+	*/
 ---
 
 <header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-	</nav>
+  <nav class="NavBar">
+    <HeaderLink href="/"><h1>operationDev</h1></HeaderLink>
+    <div>
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
+    </div>
+  </nav>
 </header>
 <style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
+  header {
+    margin: 0em 0 2em;
+  }
+  h2 {
+    margin: 0.5em 0;
+  }
+  .NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 </style>
