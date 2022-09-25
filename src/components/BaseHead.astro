@@ -21,8 +21,8 @@ const {
   imagealt = "/placeholder-social.jpg",
 } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const defineImage = image ?? '/placeholder-social.jpg';
-const postImage = `https://devblogger300.netlify.app/${defineImage}`;
+const defineImage = image ? image : '/placeholder-social.jpg';
+const postImage = `https://devblogger300.netlify.app${defineImage}`;
 ---
 
 <!-- Global Metadata -->
