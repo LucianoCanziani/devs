@@ -20,7 +20,7 @@ const latest = posts.slice(0, 4);
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
       h1 {
-        font-size: 40px;
+        font-size: 35px;
         font-family: "Noto Sans JP", sans-serif;
       }
       .articles-cont {
@@ -55,6 +55,9 @@ const latest = posts.slice(0, 4);
         font-size: 20px;
       }
       @media only screen and (max-width: 780px) {
+        h1 {
+        font-size: 30px;
+      }
         .articles-cont {
           display: grid;
           grid-template-columns: 100%;
