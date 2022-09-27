@@ -54,7 +54,9 @@ const {
         margin: 0px;
         margin-right: 5px;
       }
-
+      main {
+        margin-top: 15px;
+      }
       p {
         font-family: "Open Sans", sans-serif;
       }
@@ -63,14 +65,16 @@ const {
         border-top: 1px solid #1a202a89;
         margin: 1rem 0;
       }
-     
+
       article {
         padding: 0px 15px;
+        max-width: 74ch;
+        margin: auto;
       }
       ul.a {
         list-style-type: circle black;
       }
-      .table-content-item{
+      .table-content-item {
         color: #1a202a;
         font-size: 18px;
         font-weight: 550;
@@ -92,13 +96,15 @@ const {
           {author && <p>{author}</p>}
           {pubDate && <time> | {pubDate}</time>}
         </div>
-        {/* 
+        {
+          /* 
           updatedDate && (
             <div>
               Last updated on <time>{updatedDate}</time>
             </div>
           )
-        */}
+        */
+        }
         <hr />
         <slot />
       </article>

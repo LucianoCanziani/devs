@@ -1,6 +1,6 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import Logo from "../../public/Arimo.png";
+import Logo from '../../public/Arimo.png';
 import { SITE_TITLE } from "../config";
 /*
 <h2>
@@ -12,8 +12,9 @@ import { SITE_TITLE } from "../config";
 <style>
   header {
     margin: 0em 0 2em;
+
   }
-  header div {
+  header div{
     white-space: nowrap;
   }
   h2 {
@@ -25,49 +26,33 @@ import { SITE_TITLE } from "../config";
     text-decoration: none;
     padding-bottom: 8px;
   }
-  .logo-link {
+  .logo-link{
     padding: 0px;
   }
 
-  div a:hover {
-    color: #0a0b0f;
-  }
 
-  div a::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #1a202a;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-
-  div a:hover::before {
-    transform: scaleX(1);
-  }
   .NavBar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
+padding-top: 20px;
+  }
+  .NavBar a{
+    margin: 0px;
+  }
+  div a {
+    margin-left: 10px !important;
   }
   @media only screen and (max-width: 780px) {
     header {
-      margin: 0em;
-      margin-bottom: 20px;
-    }
+    margin: 0em;
   }
+      }
 </style>
 
 <header>
   <nav class="NavBar">
-    <HeaderLink href="/" class="logo-link"
-      ><img src={Logo} width="50px" />
-    </HeaderLink>
+    <HeaderLink href="/" class="logo-link"><img src={Logo} width="50px" /></HeaderLink>
     <div>
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/blog">Blog</HeaderLink>

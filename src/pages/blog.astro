@@ -44,6 +44,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
         width: 100%;
         height: 100%;
         position: absolute;
+		margin: 0px !important;
       }
       article div img {
         width: 100%;
@@ -92,7 +93,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
         .image-cube img {
           width: 100%;
           height: 100%;
-          object-fit: fill;
+          object-fit: cover;
         }
         .article-data {
           width: 260px;
@@ -107,7 +108,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
     <Header />
     <main>
       <section>
-        <h2>My latest articles</h2>
+        <h2>All my articles</h2>
         <div class="articles-cont">
           {
             posts.map((post) => (

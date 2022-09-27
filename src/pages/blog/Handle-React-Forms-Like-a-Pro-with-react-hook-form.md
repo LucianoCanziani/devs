@@ -13,7 +13,6 @@ Nowadays creating forms in react is easier than ever thanks to the library React
 
 That's why after implementing it in so many personal and professional projects. I decided to write a quick guide to help you understand useForm Hook and use it in real projects.
 
----
 
 ## Table Content
 
@@ -23,7 +22,6 @@ That's why after implementing it in so many personal and professional projects. 
 - <a href="#Full-useForm-Hook-Example" class="table-content-item">Full useForm Hook Example</a>
 - <a href="#Conclusion" class="table-content-item">Conclusion</a>
 
----
 
 As their official website says:
 
@@ -60,7 +58,6 @@ Now, what if we don't want to give the user the liberty to introduce whatever ki
 Then is when the validations come to play.
 
 
----
 <a name="Validate"></a>
 ## Validate
 
@@ -85,7 +82,6 @@ type="text"
 />
 ```
 
----
 <a name="Manage-Errors"></a>
 ## Manage Errors
 
@@ -123,7 +119,7 @@ Output:
 
 <img src="/gifExamples/useFormExample.gif" alt="Handle multiple validation errors with react-hook-form" class="img-center" />
 
----
+
 <a name="Full-useForm-Hook-Example"></a>
 ## Full useForm Hook Example
 
@@ -160,7 +156,7 @@ return (
 };
 export default App;
 ```
----
+
 <a name="Conclusion"></a>
 ## Conclusion
 

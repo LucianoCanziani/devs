@@ -33,6 +33,9 @@ const latest = posts.slice(0, 4);
         margin-top: 30px;
         margin-left: 0px;
       }
+      section a:hover {
+        color: #050608;
+      }
       article {
         position: relative;
         display: flex;
@@ -43,6 +46,7 @@ const latest = posts.slice(0, 4);
         width: 100%;
         height: 100%;
         position: absolute;
+        margin: 0px !important;
       }
       article div img {
         width: 100%;
@@ -73,10 +77,10 @@ const latest = posts.slice(0, 4);
           width: 100%;
         }
         section a {
-        color: #1a202a;
-        margin-top: 70px;
-        margin-left: 0px;
-      }
+          color: #1a202a;
+          margin-top: 70px;
+          margin-left: 0px;
+        }
         .image-cube {
           width: 90px;
           height: 90px;
@@ -88,7 +92,7 @@ const latest = posts.slice(0, 4);
         .image-cube img {
           width: 100%;
           height: 100%;
-          object-fit: fill;
+          object-fit: cover;
         }
         .article-data {
           width: 260px;
@@ -105,10 +109,10 @@ const latest = posts.slice(0, 4);
     <main>
       <section>
         <h1>Operation Dev: First, solve the problem. Then, write the post.</h1>
+        <p>Hi there, I'm Luciano Canziani 👋!</p>
         <p>
-          Hi there, I'm Luciano Canziani 👋! In here you'll find my journey as a
-          developer. From informative, tutorials to a bit of personal
-          experience.
+          In here you'll find my journey as a developer. From informative,
+          tutorials to a bit of personal experience.
         </p>
       </section>
       <section>
@@ -138,7 +142,7 @@ const latest = posts.slice(0, 4);
             ))
           }
         </div>
-        <HeaderLink href="/blog">See all articles</HeaderLink>
+        <HeaderLink class="see-all" href="/blog">See all articles</HeaderLink>
       </section>
     </main>
     <Footer />

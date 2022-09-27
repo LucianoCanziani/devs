@@ -16,10 +16,10 @@ main {
 }
 
 body {
-	font-family: Verdana, sans-serif;
+	font-family: "Open Sans", sans-serif;
 	margin: auto;
 	padding: 0px 20px 0px 20px;
-	max-width: 75ch;
+	max-width: 90ch;
 	text-align: left;
 	background-color: #e9f4ff;
 	word-wrap: break-word;
