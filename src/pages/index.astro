@@ -23,6 +23,12 @@ const latest = posts.slice(0, 4);
         font-size: 35px;
         font-family: "Noto Sans JP", sans-serif;
       }
+      strong{
+        font-weight: 800;
+      }
+      .head-section{
+        border-bottom: 1px solid #1a202a49;
+      }
       .articles-cont {
         display: grid;
         grid-template-columns: 48% 48%;
@@ -59,6 +65,9 @@ const latest = posts.slice(0, 4);
         margin: 0px;
         font-family: "Open Sans", sans-serif;
         font-size: 20px;
+      }
+      span{
+        color: navy;
       }
       @media only screen and (max-width: 780px) {
         h1 {
@@ -107,13 +116,13 @@ const latest = posts.slice(0, 4);
   <body>
     <Header title={SITE_TITLE} />
     <main>
-      <section>
-        <h1>Operation Dev: First, solve the problem. Then, write the post.</h1>
-        <p>Hi there, I'm Luciano Canziani 👋!</p>
+      <section class="head-section">
+        <h1><strong>Operation Dev</strong>: First, solve the problem. Then, write the post.</h1>
+        <!--<p>Hi there, I'm Luciano Canziani 👋!</p>
         <p>
           In here you'll find my journey as a developer. From informative,
           tutorials to a bit of personal experience.
-        </p>
+        </p>-->
       </section>
       <section>
         <h2>My latest articles</h2>

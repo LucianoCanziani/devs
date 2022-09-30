@@ -7,6 +7,7 @@ heroImage: "/mainImage/React-Hook-Form.png"
 tags: "react, react-hook-form, useform, hook, form, programming"
 author: "Luciano Canziani"
 imgAlt: "React Hooks React-Hook-Form"
+type: "ReactJs"
 ---
 
 Nowadays creating forms in react is easier than ever thanks to the library React Hook Form.
@@ -115,7 +116,7 @@ type="text"
 )}
 ```
 
-Output:
+<strong>Output:</strong>
 
 <img src="/gifExamples/useFormExample.gif" alt="Handle multiple validation errors with react-hook-form" class="img-center" />
 
@@ -163,4 +164,4 @@ export default App;
 After reading this article you have learned the basics of the react-hook-form library and how to implement it in a form to register and validate input data plus managing custom errors.
 
 If you want to learn even more about this Hook, you can check out their website which is full of useful information.
-react-hook-form site: https://react-hook-form.com/
+react-hook-form site: <a href="https://react-hook-form.com/" target=”_blank”>Website</a>

@@ -13,6 +13,7 @@ export interface Props {
     heroImage?: string;
     tags?: string;
     imgAlt?: string;
+    type?: string;
   };
 }
 
@@ -26,8 +27,18 @@ const {
     updatedDate,
     heroImage,
     imgAlt,
+    type,
   },
 } = Astro.props;
+/*
+const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
+);
+
+const relatedArticles = posts.filter(post => post.type === type);
+*/
 ---
 
 <html lang="en">
@@ -64,6 +75,9 @@ const {
       hr {
         border-top: 1px solid #1a202a89;
         margin: 1rem 0;
+      }
+      pre {
+        margin: 70px 0px !important;
       }
 
       article {

@@ -1,5 +1,15 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
+import type { AstroUserConfig } from "astro";
+import compress from "astro-compress";
+
+export default (): AstroUserConfig => ({
+	outDir: "./src",
+	integrations: [
+		compress({
+			path: "./src",
+            assets: "./public",
+		}),
+	],
+});
 
 export const SITE_TITLE = 'Operation Dev';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
