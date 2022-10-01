@@ -87,7 +87,7 @@ If those rules are not met. The form will not be able to submit. Executing the c
 
 <a id="pattern"></a>
 
-## - pattern
+## - pattern Validation
 
 ```js
 <input type="text" {...register("userName", { pattern: /[A-Za-z]/ })} />;
@@ -102,7 +102,7 @@ In this case, it will only accept letters from `A-Z` and `a-z`. Both upper and l
 
 <a id="validate"></a>
 
-## - validate
+## - validate Validation
 
 ```js
 <input
