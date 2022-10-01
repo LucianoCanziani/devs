@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Learn the Benefits of using useRef Hook"
 description: "Learn all about how the useRef Hook can help you in your day to day life as a programmer."
-pubDate: "Sep 28 2022"
+pubDate: "Sep 30 2022"
 heroImage: "/mainImage/react-hooks-useref.png"
 tags: "react,reactjs,react useref, useref,useref hook, hook,how to use useref,learn useref, programming"
 author: "Luciano Canziani"

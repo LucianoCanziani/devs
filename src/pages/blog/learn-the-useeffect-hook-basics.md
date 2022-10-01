@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Learn the useEffect Hook Basics"
 description: "Learn the basics of the useEffect hook with some easy to understand examples."
-pubDate: "Sep 27 2022"
+pubDate: "Sep 30 2022"
 heroImage: "/mainImage/react-hooks-useeffect.png"
 tags: "react,reactjs,react useeffect, useeffect,useeffect hook, hook,how to use useeffect, programming"
 author: "Luciano Canziani"

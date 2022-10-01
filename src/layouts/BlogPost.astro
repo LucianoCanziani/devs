@@ -102,7 +102,7 @@ const relatedArticles = posts.filter(post => post.type === type);
       <article>
         {
           heroImage && (
-            <img width="100%" height="auto" src={heroImage} alt="imgAlt" />
+            <img width="100%" height="auto" src={heroImage} alt={imgAlt} />
           )
         }
         <h1 class="title">{title}</h1>

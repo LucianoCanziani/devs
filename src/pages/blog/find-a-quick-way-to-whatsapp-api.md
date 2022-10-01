@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Find A Quick Way To Whatsapp API"
 description: "Implement Whatsapp API by sending users to your chat, predefined messaging, and styling messages with URL-encoding."
-pubDate: "Sep 28 2022"
+pubDate: "Sep 30 2022"
 heroImage: "/mainImage/Whatsapp-API-For-Websites.png"
 tags: " whatsapp, api, Whatsapp api,messaging,web development, programming"
 author: "Luciano Canziani"

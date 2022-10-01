@@ -40,7 +40,14 @@ b {
 }
 
  article > h2{
-	padding-top: 25px;
+	padding-top: 5px;
+  }
+  article p {
+	margin-bottom: 35px;
+    margin-top: 0px;
+  }
+  article ul {
+	margin-bottom: 35px;
   }
 p {
 	font-size: 18px;

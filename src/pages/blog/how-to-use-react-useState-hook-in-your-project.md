@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "How to use React UseState Hook in your Project"
 description: "In this article, you will learn how to use the useState Hook and how to implement it in your project."
-pubDate: "Sep 27 2022"
+pubDate: "Sep 30 2022"
 heroImage: "/mainImage/react-hooks-usestate.png"
 tags: "react, usestate,usestate hook, hook,how to use usestate, programming"
 author: "Luciano Canziani"

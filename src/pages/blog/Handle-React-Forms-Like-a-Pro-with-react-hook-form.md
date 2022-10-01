@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Handle React Forms Like a Pro with react-hook-form"
 description: "Learn how to use the react-hook-form with this quick guide to understand the bases of the useForm Hook and use it in real projects."
-pubDate: "Sep 25 2022"
+pubDate: "Sep 30 2022"
 heroImage: "/mainImage/React-Hook-Form.png"
 tags: "react, react-hook-form, useform, hook, form, programming"
 author: "Luciano Canziani"
@@ -151,7 +151,7 @@ return (
   {errors.userName && errors.userName.type === "minLength" && (
   <p>MinLenght of two character required</p>
   )}
-  <button type="submit">Enviar pedido</button>
+  <button type="submit">Send</button>
  </form>
 );
 };
