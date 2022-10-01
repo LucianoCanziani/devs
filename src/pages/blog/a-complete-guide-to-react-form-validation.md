@@ -51,7 +51,7 @@ If the value provided by the user is not true, for example, an empty field. Your
 
 ## - min and max Validation
 
-This two form validation define the min and max value a number can have.
+These two form validation define the min and max value a number can have.
 
 ```js
 <input 
@@ -64,7 +64,7 @@ This two form validation define the min and max value a number can have.
 }
 ```
 
-In the above code we establish using min and max that if the user age is below 18 or above 99. Will not be alowed to submit the form.
+In the above code, we establish using min and max if the user age is below 18 or above 99. Will not be allowed to submit the form.
 
 <a id="minLength-minLength"></a>
 
@@ -81,9 +81,9 @@ In the above code we establish using min and max that if the user age is below 1
 }
 ```
 
-By adding the minLength and maxLength, you are setting the number of characters required for the users password. In the example above, the password must be between 8 and 16 character.
+By adding the minLength and maxLength, you are setting the number of characters required for the user's password. In the example above, the password must be between 8 and 16 characters.
 
-If those rules are not meet. The form will not be able to sumbit. Executing the conditional below announcing the user of the error.
+If those rules are not met. The form will not be able to submit. Executing the conditional below announcing the user of the error.
 
 <a id="pattern"></a>
 
@@ -96,7 +96,7 @@ If those rules are not meet. The form will not be able to sumbit. Executing the 
 }
 ```
 
-The pattern rule is meant to reduce the type of characters the user introduce in the input.
+The pattern rule is meant to reduce the type of characters the user introduces in the input.
 
 In this case, it will only accept letters from `A-Z` and `a-z`. Both upper and lower case.
 
@@ -120,6 +120,6 @@ In the validate example we stated a function saying that if the entered value is
 
 ## Conclusion
 
-By reading this article you have learned all the React Hook Form Validation rules that this library has to offer. I am planning to go en depth one by one in the next articles
+By reading this article you have learned all the React Hook Form Validation rules that this library has to offer. I am planning to go in depth one by one in the next articles
 
 Don't forget that the key to mastering any skill is practice!
