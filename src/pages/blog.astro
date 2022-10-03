@@ -15,7 +15,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title="Operation Dev - Blog" description="Operation Dev blog, where the sauce is made." />
     <style>
       main {
         margin-bottom: 160px !important;
@@ -108,7 +108,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
     <Header />
     <main>
       <section>
-        <h2>All my articles</h2>
+        <h1>All my articles</h1>
         <div class="articles-cont">
           {
             posts.map((post) => (

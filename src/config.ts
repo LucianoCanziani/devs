@@ -12,4 +12,4 @@ export default (): AstroUserConfig => ({
 });
 
 export const SITE_TITLE = 'Operation Dev';
-export const SITE_DESCRIPTION = 'Welcome to my website!';
+export const SITE_DESCRIPTION = 'I write technical blog articles about code solutions, software development activities and book recommendations.';
