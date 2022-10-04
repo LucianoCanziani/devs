@@ -3,7 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import HeaderLink from "../components/HeaderLink.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_TAGS } from "../config";
 
 const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
   (a, b) =>
@@ -17,16 +17,21 @@ const latest = posts.slice(0, 4);
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+      tags={SITE_TAGS}
+      author="Luciano Canziani"
+    />
     <style>
       h1 {
         font-size: 35px;
         font-family: "Noto Sans JP", sans-serif;
       }
-      strong{
+      strong {
         font-weight: 800;
       }
-      .head-section{
+      .head-section {
         border-bottom: 1px solid #1a202a49;
       }
       .articles-cont {
@@ -66,7 +71,7 @@ const latest = posts.slice(0, 4);
         font-family: "Open Sans", sans-serif;
         font-size: 20px;
       }
-      span{
+      span {
         color: navy;
       }
       @media only screen and (max-width: 780px) {
@@ -117,12 +122,20 @@ const latest = posts.slice(0, 4);
     <Header title={SITE_TITLE} />
     <main>
       <section class="head-section">
-        <h1><strong>Operation Dev</strong>: First, solve the problem. Then, write the post.</h1>
-        <!--<p>Hi there, I'm Luciano Canziani 👋!</p>
+        <h1>
+          <strong>Operation Dev</strong>: First, solve the problem. Then, write
+          the post.
+        </h1>
+        <p>Hi there, I'm Luciano Canziani 👋!</p>
         <p>
-          In here you'll find my journey as a developer. From informative,
-          tutorials to a bit of personal experience.
-        </p>-->
+          Here you will learn how to become a better developer, improve your
+          skills and find inspiration through my posts.
+        </p>
+        <p>
+          As my motto says, I will mostly write about problems or interesting
+          things I encounter in the wild dev world. Hoping that will be useful
+          for someone.
+        </p>
       </section>
       <section>
         <h2>My latest articles</h2>
@@ -132,7 +145,11 @@ const latest = posts.slice(0, 4);
               <article>
                 <a href={post.url} />
                 <div class="image-cube">
-                  <img src={post.frontmatter.heroImage} class="blogImage" />
+                  <img
+                    src={post.frontmatter.heroImage}
+                    alt={post.frontmatter.imgAlt}
+                    class="blogImage"
+                  />
                 </div>
                 <div class="article-data">
                   <h3>{post.frontmatter.title}</h3>
@@ -151,7 +168,9 @@ const latest = posts.slice(0, 4);
             ))
           }
         </div>
-        <HeaderLink class="see-all" href="http://www.operationdev.com/blog/">See all articles</HeaderLink>
+        <HeaderLink class="see-all" href="http://www.operationdev.com/blog/"
+          >See all articles</HeaderLink
+        >
       </section>
     </main>
     <Footer />

@@ -13,3 +13,4 @@ export default (): AstroUserConfig => ({
 
 export const SITE_TITLE = 'Operation Dev';
 export const SITE_DESCRIPTION = 'I write technical blog articles about code solutions, software development activities and book recommendations.';
+export const SITE_TAGS = 'operation,dev,developer, web developer, code, coding, programmer,react,astro';
