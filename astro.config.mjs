@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import netlify from '@astrojs/netlify/functions';
-import netlify from '@astrojs/netlify/edge-functions';
 import robotsTxt from 'astro-robots-txt';
 import sitemap from '@astrojs/sitemap';
 
