@@ -101,7 +101,7 @@ const App = () => {
 export default App;
 ```
 
-Check the full code with styles in my <a href="https://jsonplaceholder.typicode.com/">GitHub Repo</a>.
+Check the full code with styles in my <a href="https://github.com/LucianoCanziani/api-call-with-axios-react">GitHub Repo</a>.
 
 ## Conclusion
 
