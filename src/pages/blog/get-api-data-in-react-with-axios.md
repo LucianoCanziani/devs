@@ -41,7 +41,7 @@ To obtain data from an API you can use <strong>Axios Get request</strong> method
 For the next example I will use the <a href="https://jsonplaceholder.typicode.com/">jsonplaceholder API</a> to request a batch of random users data and display it in a HTML table.
 
 
-<img src="/imgExamples/users-table-data.png" alt="Users table data by making an Axios Get Request." class="img-center" />
+<img src="/imgExamples/users-table-data.png" alt="Users table data by making an Axios Get Request in React." class="img-center" />
 <p style="text-align: center;font-size: 13px;color: black;">Users Data table with jsonplaceholder API</p>
 
 
