@@ -1,0 +1,30 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import HeaderLink from "../components/HeaderLink.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_TAGS } from "../config";
+
+const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
+);
+
+const latest = posts.slice(0, 4);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+
+  <body>
+    <Header title="404 Not Found" />
+    <main>
+      <section>
+        <h1>Error 404 Not Found</h1>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
