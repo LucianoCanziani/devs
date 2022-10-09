@@ -113,7 +113,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
           {
             posts.map((post) => (
               <article>
-                <a href={post.url} />
+                <a href={"https://www.operationdev.com/" +  post.url} />
                 <div class="image-cube">
                   <img src={post.frontmatter.heroImage} alt={post.frontmatter.imgAlt} class="blogImage" />
                 </div>
