@@ -61,7 +61,7 @@ const App = () => {
       .then((res) => { // Data requested in "res"
         const { data } = res;
         console.log(data); // Display data in console
-        setUsers(data); // Saves data in users variable
+        setUsers(data); // Sets data in users variable
       })
       .catch((err) => { // Error handler
         console.log(err);
