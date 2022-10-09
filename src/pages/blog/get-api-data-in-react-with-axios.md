@@ -14,9 +14,9 @@ In this article, I will show how to make an API request in React Js using Axios.
 
 Axios is a very popular library used to make promise-based HTTP requests and retrieve data from the web. It's super easy to use as an alternative to the Fetch API.
 
-Let's say that you have an API HTTP address and want to get that data into your project.
+Let's say that you have an API HTTP address and want to get their data in your application.
 
-Thanks to Axios you can make a simple request for that data and make use of it in your React project.
+Thanks to Axios you can make a simple request for that data and make use of it in your React application.
 
 ## Install Axios in React
 
