@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: "Get API Data in React With Axios"
-description: "In this post, we are going to build a React Application that fetches data from an API. We'll learn how to use Axios to make the request and display it on the page."
+description: "In this article, we are going to build a React Application that fetches data from an API. We'll learn how to use Axios to make get request and display the recieved data on the page."
 pubDate: "Oct 09 2022"
 heroImage: "/mainImage/axios-in-react.png"
 tags: "react, reactjs, fetch data from API, Axios, react Axios with useeffect, dev, developer, web developer"
