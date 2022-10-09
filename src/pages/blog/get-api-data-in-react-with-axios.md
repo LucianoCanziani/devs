@@ -71,23 +71,23 @@ const App = () => {
   return (
     <div>
       <h1>USERS LIST USING AXIOS</h1>
-      <div className="table-cont">
+      <div>
         <table>
           <thead>
             <tr>
               <th>Full Name</th>
-              <th className="vertical-border">User Name</th>
-              <th className="vertical-border">City</th>
+              <th>User Name</th>
+              <th>City</th>
               <th>Email</th>
             </tr>
           </thead>
           <tbody>
             {users.map((user, index) => { // Mapping recieved data
               return (
-                <tr key={index} className="top-border">
+                <tr key={index}>
                   <th>{user.name}</th>
-                  <th className="vertical-border">{user.username}</th>
-                  <th className="vertical-border">{user.address.city}</th>
+                  <th>{user.username}</th>
+                  <th>{user.address.city}</th>
                   <th>{user.email}</th>
                 </tr>
               );
