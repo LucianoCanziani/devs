@@ -12,7 +12,7 @@ type: "ReactJs"
 
 You finish coding a good-looking React form and manage to store the data efficiently but now you have no clue how to get that data in your server?
 
-Luckily for you and me, Axios exist and simplifies that with his famous <strong>POST requests</strong>.
+Luckily for you and me, Axios exist and simplifies that issue with his famous <strong>POST requests</strong>.
 
 Which allows us to <strong>post form data to the server</strong> in a really simple way.
 
@@ -23,7 +23,7 @@ Which allows us to <strong>post form data to the server</strong> in a really sim
 
 ## Axios Post Example
 
-In nexts example I will use the <a href="https://jsonplaceholder.typicode.com/" target=”_blank”>jsonplaceholder API</a> to make the post request and then show it in ```console.log```.
+In next example I will use the <a href="https://jsonplaceholder.typicode.com/" target=”_blank”>jsonplaceholder API</a> to make the post request and then show it in ```console.log```.
 
 <img src="/imgExamples/posting-form-data-with-axios.png" alt="Posting form data with Axios in React" class="img-center" />
 <p style="text-align: center;font-size: 13px;color: black;">React form that when submitted will execute the Post Request function.</p>
@@ -76,12 +76,12 @@ const App = () => {
 export default App;
 ```
 
-Check the full code with styles in my <a href="https://github.com/LucianoCanziani/Posting-Form-Data-With-Axios" target=”_blank”>GitHub Repo</a>.
+In the previous example, we just passed all the parameters we wanted to post as a query object.
 
-In the previous example, we just pass all the parameters we wanted to post as a query object.
+Check the full code with styles in my <a href="https://github.com/LucianoCanziani/Posting-Form-Data-With-Axios" target=”_blank”>GitHub Repo</a>.
 
 ## Conclusion
 
-After reading this article you should be able to realize who to post form data with Axios passing the parameters you want and uploading them to your server.
+After reading this article you should be able to realize who to post form data with Axios passing the parameters you want to be uploaded to your server.
 
 If you want to learn more about Axios you can check their <a href="https://axios-http.com/" target=”_blank”>official website</a>.
