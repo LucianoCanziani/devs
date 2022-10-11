@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Axios Post Form Data"
 description: "In this article, I will show you how to post form data with Axios using React Js."
-pubDate: "Oct 10 2022"
+pubDate: "Oct 11 2022"
 heroImage: "/mainImage/axios-post-react.png"
 tags: "react, react js,axios,axios post,post form data,axios post form data"
 author: "Luciano Canziani"
@@ -10,7 +10,7 @@ imgAlt: "Axios post form data"
 type: "ReactJs"
 ---
 
-You finish coding a good-looking React form and manage to store the data efficiently but now you have no clue how to get that data in your server?
+You finish coding a good-looking React form and manage to store the data efficiently in a variable but now you have no clue how to get that data in your server?
 
 Luckily for you and me, Axios exist and simplifies that issue with his famous <strong>POST requests</strong>.
 
