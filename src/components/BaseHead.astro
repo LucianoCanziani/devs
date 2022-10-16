@@ -18,17 +18,18 @@ const {
   image,
   author,
   tags,
-  imagealt = "/placeholder-social.jpg",
+  imagealt
 } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const defineImage = image ? image : '/placeholder-social.jpg';
+
+const defineImage = image ?? '/placeholder-social.jpg';
 const postImage = `https://www.operationdev.com${defineImage}`;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/Arimo.png" />
+<!-- <link rel="icon" type="image/svg+xml" href="/Arimo.png" />-->
 <meta name="generator" content={Astro.generator} />
 
 <!-- Primary Meta Tags -->
@@ -38,7 +39,8 @@ const postImage = `https://www.operationdev.com${defineImage}`;
 <meta name="keywords" content={tags} />
 <meta name="author" content={author} />
 <meta name="robots" content="index, follow" />
-
+<link rel="alternate" type="application/rss+xml" href="https://www.operationdev.com/sitemap-index.xml">
+<meta property="og:site_name" content="Operation Dev" />
 <!-- Open Graph / Facebook -->
 
 <meta property="og:type" content="website" />
@@ -51,7 +53,7 @@ const postImage = `https://www.operationdev.com${defineImage}`;
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:domain" content="operationdev.com" />
-<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:url" content={canonicalURL.href} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={postImage} />
