@@ -145,13 +145,13 @@ In this article, we will only use the regular site key.
 
 The famous "I'm not a robot" checkbox
 
-<img src="/gifExamples/recaptcha-checkbox.gif" alt="reCaptcha v2 checkbox I am not a robot test" class="img-center" style="width: 400px !important; margin-bottom: 35px;" />
+<img src="/gifExamples/recaptcha-checkbox.gif" alt="reCaptcha v2 checkbox I am not a robot test" class="img-center" style="width: 90% !important; margin-bottom: 35px;" />
 
 If you have never passed one of these I doubt your integrity as a human.
 
 In case Google still has doubts about your humanity it will give you a visual test like this.
 
-<img src="/imgExamples/recaptcha-visual-test.jpg" alt="reCaptcha v2 visual test" class="img-center" style="width: 400px !important; margin-bottom: 15px;" />
+<img src="/imgExamples/recaptcha-visual-test.jpg" alt="reCaptcha v2 visual test" class="img-center" style="width: 70% !important; margin-bottom: 15px;" />
 <p style="text-align: center;font-size: 13px;color: black;">This one can be bit more tricky sometimes so don't feel bad about yourself if you don't pass it on the first try. Credits to <a href="https://support.google.com/recaptcha/?hl=en#:~:text=What%20is%20reCAPTCHA%3F,malicious%20software%20to%20figure%20out." target=”_blank”>Google reCaptcha</a>.</p>
 
 <a name="recaptcha-checkbox-userside"></a>
