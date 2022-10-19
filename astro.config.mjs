@@ -1,15 +1,26 @@
-import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
-import robotsTxt from 'astro-robots-txt';
-import sitemap from '@astrojs/sitemap';
+import { defineConfig } from "astro/config";
+import mdx from "@astrojs/mdx";
+import robotsTxt from "astro-robots-txt";
+import sitemap from "@astrojs/sitemap";
+import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://www.operationdev.com/',
+  site: "https://www.operationdev.com/",
 
-	experimental: {
-		integrations: true,
-	  },
+  experimental: {
+    integrations: true,
+  },
 
-	integrations: [mdx(), sitemap(),robotsTxt()],
+  integrations: [
+    mdx(),
+    sitemap(),
+    robotsTxt(),
+    partytown({
+      // Adds dataLayer.push as a forwarding-event.
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
+  ],
 });
