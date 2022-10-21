@@ -111,7 +111,11 @@ blockquote {
  	color: #1a202a;
  	font-size: 34px;
  }
-
+.d-flex-2-col{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
  .table-content-item {
  	color: #1a202a;
  	font-size: 18px;
@@ -127,6 +131,29 @@ blockquote {
  	display: block;
  	margin-left: auto;
  	margin-right: auto;
+ }
+ table{
+	border-collapse: collapse;
+	text-indent: initial;
+	border-spacing: 0px;
+	border-radius: 20px;
+	margin: 0px auto;
+ }
+
+ thead tr th{
+	font-size: 19px;
+ 	color: #000;
+ 	text-align: center;
+ 	border: 1px solid #727272;
+ 	padding: 9px 13px;
+ }
+
+ tbody tr td{
+	font-size: 16px;
+	color: #1a202a;
+	text-align: left;
+	border: 1px solid #727272;
+	padding: 9px 13px;
  }
 
  .simple-table {
@@ -158,4 +185,12 @@ blockquote {
  	body {
  		padding: 0px 10px;
  	}
+	 .d-flex-2-col{
+		display: flex;
+		flex-direction: column;
+	}
+	table{
+		width: 100%;
+		margin-bottom: 20px;
+	}
  }
