@@ -27,6 +27,10 @@ The code below will show you how to add the language prop `hl` inside your reCap
 />
 ```
 
+Output:
+
+<img src="/imgExamples/recaptcha-spanish.png" alt="React reCaptcha in Spanish language" class="img-center" />
+
 I chose the Spanish language and pass it as a prop into the reCaptcha component.
 
 ## reCaptcha Supported Languages
