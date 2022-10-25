@@ -26,7 +26,8 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
       .articles-cont {
         display: grid;
         grid-template-columns: 48% 48%;
-        gap: 4%;
+        gap: 1% 4%;
+        padding-bottom: 40px;
       }
       section a {
         color: #1a202a;
@@ -123,7 +124,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
           {
             posts.map((post) => (
               <article>
-                <a href={"https://www.operationdev.com/" +  post.url} />
+                <a href={"https://www.operationdev.com" +  post.url} />
                 <div class="image-cube">
                   <img src={post.frontmatter.heroImage} alt={post.frontmatter.imgAlt} class="blogImage" />
                 </div>

@@ -116,7 +116,7 @@ Here you will find a full list of all the current supported languages for reCapt
 | Zulu                    | zu     |
 
 </div>
-````
+
 
 ## Conclusion
 
