@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "React-Hook-Form Error Message Styles"
 description: "Find how to style your React-Hook-Form error messages with CSS, error icons and Pop-Up alerts with react-toastify."
-pubDate: "Oct 30 2022"
+pubDate: "Oct 31 2022"
 heroImage: "/mainImage/react-hook-form-error-styles.png"
 tags: "error, error message, react hook form, error message styles, form style, react, react form"
 author: "Luciano Canziani"
