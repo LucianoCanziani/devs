@@ -72,7 +72,7 @@ const App = () => {
             required: "Repeat the password",
             validate: (value) => {// Validate function to check if they do not match
               if (watch("password") != value) {
-                return "Your passwords do no match";
+                return "Your passwords do not match";
               }
             },
           })}
