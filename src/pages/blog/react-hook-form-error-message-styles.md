@@ -157,7 +157,7 @@ h2 {
   color: rgb(255, 0, 0);
 }
 
-.erroroOccurredLabel {
+.errorOccurredLabel {
   color: rgb(255, 0, 0) !important;
 }
 

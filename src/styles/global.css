@@ -193,4 +193,8 @@ blockquote {
 		width: 100%;
 		margin-bottom: 20px;
 	}
+	.square-img {
+		width: 300px !important;
+		height: 300px !important;
+	}
  }
