@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "React Hook Form Password Match"
 description: "Learn how to validate a password match with the help of React-Hook-Form."
-pubDate: "Oct  2022"
+pubDate: "Nov 02 2022"
 heroImage: "/mainImage/react-hook-form-password-match.png"
 tags: "react hook form, react, password, match, password match"
 author: "Luciano Canziani"
