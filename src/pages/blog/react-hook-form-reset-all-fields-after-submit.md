@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: "React-Hook-Form Reset All Fields After Submit"
-description: "Reset all React form inputs using the reset API of react-hook-forms with code examples."
+description: "Reset all React form inputs using the reset method of react-hook-forms with code examples."
 pubDate: "Nov 08 2022"
 heroImage: "/mainImage/react-hook-form-reset-all-fields-after-submit.jpg"
 tags: "react hook form, react,react-hook-form,reset, fields, submit, reset after submit"
@@ -16,7 +16,7 @@ Then in this quick article, I'll teach you how to fix that.
 
 ## Reset All Fields After Submit Example
 
-In the next example, we use the reset API that react-hook-form offers us and we execute it right at the end of the `onSubmit` function.
+In the next example, we use the reset method that react-hook-form offers us and we execute it right at the end of the `onSubmit` function.
 
 By executing the `reset()` function, you will be able to clear all inputs.
 
@@ -157,6 +157,6 @@ h2 {
 ```
 ## Conclusion
 
-By reading this article you have learned how to implement the reset API in your React forms using react-hook-form.
+By reading this article you have learned how to implement the reset method in your React forms using react-hook-form.
 
-If you want to learn more about the reset API you can check the <a href="https://react-hook-form.com/api/useform/reset" target=”_blank”>reset documentation</a>.
+If you want to learn more about the reset method you can check the <a href="https://react-hook-form.com/api/useform/reset" target=”_blank”>reset documentation</a>.
