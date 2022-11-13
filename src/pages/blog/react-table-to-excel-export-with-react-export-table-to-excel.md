@@ -76,16 +76,16 @@ const TableExport = () => {
       <table ref={tableRef}>
         <thead>
           <tr>
-            <th className="table-header">Name</th>
-            <th className="table-header">Last Name</th>
+            <th>Name</th>
+            <th>Last Name</th>
           </tr>
         </thead>
         <tbody>
           {users.map((user, index) => {
             return (
               <tr key={index}>
-                <th className="table-box">{user.name}</th>
-                <th className="table-box">{user.lastName}</th>
+                <th>{user.name}</th>
+                <th>{user.lastName}</th>
               </tr>
             );
           })}
