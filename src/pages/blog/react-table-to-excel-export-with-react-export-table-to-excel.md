@@ -46,10 +46,21 @@ In there you initialize the useRef hook for then to be assigned to the table you
 <iframe style="margin-bottom: 35px;" width="100%" height="315" src="https://www.youtube.com/embed/pdUo0_owT1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ```js
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { useDownloadExcel } from "react-export-table-to-excel";
 
 const TableExport = () => {
+  let users = [
+    {
+      name: "Operation",
+      lastName: "Dev",
+    },
+    {
+      name: "Luciano",
+      lastName: "Canziani",
+    },
+  ];
+
   const tableRef = useRef(null);
 
   const { onDownload } = useDownloadExcel({
@@ -62,22 +73,22 @@ const TableExport = () => {
     <div>
       <button onClick={onDownload}>DOWNLOAD</button>
 
-      <table ref={tableRef}> //Here you reference the table with useRef
+      <table ref={tableRef}>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Last Name</th>
+            <th className="table-header">Name</th>
+            <th className="table-header">Last Name</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th>Operation</th>
-            <th>Dev</th>
-          </tr>
-          <tr>
-            <th>Luciano</th>
-            <th>Canziani</th>
-          </tr>
+          {users.map((user, index) => {
+            return (
+              <tr key={index}>
+                <th className="table-box">{user.name}</th>
+                <th className="table-box">{user.lastName}</th>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
