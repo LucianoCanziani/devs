@@ -1,26 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles.css';
-import WhatsappLinkGenerator from './components/WhatsappLinkGenerator';
-/* import CopyLink from './components/CopyLink'; */
-import Info from './components/Info';
+import { WhatsappLinkGenerator } from './components/WhatsappLinkGenerator.jsx';
+import { Info } from './components/Info.jsx';
 import { ToastContainer, toast } from 'react-toastify';
 const App = () => {
-    const [fullLink, setFullLink] = useState("")
-    const OpenLink = (link) => {
-        setFullLink(link)
-    }
+
 
     return (
         <div>
             <div className='whatsapp-tool-cont'>
-                <WhatsappLinkGenerator /* OpenLink={OpenLink} */ />
+                <WhatsappLinkGenerator />
                 <Info />
             </div>
-            {/* <div className='whatsapp-tool-cont2'>
-                { <CopyLink link={fullLink} /> }
-                <div className="maquetadoHidden"><div className='info-cont'></div></div>
-
-            </div> */}
             <ToastContainer />
         </div>
     );
