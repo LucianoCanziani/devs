@@ -1,0 +1,307 @@
+* {
+  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px !important;
+  padding: 0px 20px 0px 20px;
+  max-width: 100% !important;
+  text-align: left;
+  background-color: #e9f4ff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: #1a202a;
+}
+
+.whatsapp-tool-cont {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  padding: 2%;
+  padding-bottom: 0%;
+}
+
+.whatsapp-tool-cont2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 2%;
+}
+
+.form {
+  margin: 10px auto;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background: #0f0f0f;
+  border-radius: 30px;
+}
+
+.label-message {
+  margin-top: 35px;
+}
+
+.input {
+  font-size: 16px;
+  background: #FFFFFF;
+  border: 1px solid #CACACA;
+  border-radius: 5px;
+  outline: none;
+  padding: 18.5px 14px 18.5px 14px;
+  transition: box-shadow ease .25s, border-color ease .25s;
+  width: 100%;
+  margin-bottom: 35px;
+  height: 100px;
+}
+
+.clipboard-cont-cont {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px;
+  background: #0f0f0f;
+  border-radius: 30px;
+}
+
+.clipboard-cont {
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-content: center;
+  font-size: 16px;
+  background: #FFFFFF;
+  border: 1px solid #CACACA;
+  border-radius: 5px;
+  outline: none;
+  padding: 18.5px 14px 18.5px 14px;
+  width: 100%;
+  height: 55px;
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+
+/* .input-clipboard {
+  font-size: 16px;
+  background: #FFFFFF;
+  border: 1px solid #CACACA;
+  border-radius: 5px;
+  outline: none;
+  padding: 18.5px 14px 18.5px 14px;
+  width: 100%;
+  margin-bottom: 35px;
+} */
+
+.text-clipboard {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 90%;
+}
+
+.copy-btn {
+  display: flex;
+  padding-top: 10px;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  right: 0px;
+  border: none;
+  background-color: #0000;
+  cursor: pointer;
+}
+
+.copy-btn:active {
+  transform: scale(0.97);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input::placeholder {
+  color: rgb(23, 23, 23);
+}
+
+
+.input-label {
+  color: #efefef;
+  display: block;
+  pointer-events: none;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.input-label-remind {
+  font-size: 13px !important;
+  color: #dbdbdb !important;
+}
+
+.input:focus {
+  border-bottom: 1px solid #4f4f4f;
+  outline: none;
+}
+
+
+.send-btn {
+  width: 100%;
+  background-color: #0ab819;
+  color: #d9d9d9;
+  border: none;
+  padding: 10px 0px;
+  font-size: 23px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.copy-cont {
+  padding: 0% 2%;
+}
+
+/* PHONE INPUT */
+
+.form-control {
+  width: 100% !important;
+}
+
+.form-control:focus {
+  border: 1px solid #CACACA !important;
+  box-shadow: 0 0 0 1px #1976d200 !important;
+}
+
+.phone-input:focus {
+  border: 1px solid #CACACA !important;
+}
+
+.info-cont {
+  width: 550px;
+}
+
+h1 {
+  font-size: 39px
+}
+
+.message-item-cont {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+.message-item{
+  margin-left: 80px;
+}
+li {
+  display: flex;
+  align-items: center;
+}
+
+li span {
+  padding-left: 10px;
+  font-size: 17px;
+}
+
+mark {
+  color: #0ab819;
+  background-color: #0000 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .whatsapp-tool-cont {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 2%;
+    padding-bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 1105px) {
+  .whatsapp-tool-cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .whatsapp-tool-cont2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 2%;
+  }
+  .message-item{
+    margin-left: 0px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .info-cont {
+    width: 100%;
+  }
+
+  .maquetadoHidden {
+    display: hidden;
+  }
+
+  .message-item-cont {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+    margin-top: 25px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  .clipboard-cont-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px;
+    background: #0f0f0f;
+    border-radius: 30px;
+  }
+
+
+
+  h1 {
+    font-size: 43px
+  }
+
+  h2 {
+    margin-top: -10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .message-item-cont {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    margin-top: 25px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

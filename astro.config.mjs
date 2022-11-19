@@ -3,6 +3,7 @@ import mdx from "@astrojs/mdx";
 import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
 import partytown from "@astrojs/partytown";
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,7 +12,7 @@ export default defineConfig({
   experimental: {
     integrations: true,
   },
-
+ 
   integrations: [
     mdx(),
     sitemap(),
@@ -21,5 +22,6 @@ export default defineConfig({
         forward: ["dataLayer.push"],
       },
     }),
+    react(),
   ],
 });
