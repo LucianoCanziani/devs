@@ -1,5 +1,5 @@
 ---
-import  App  from "../../components/tools/whatsappLinkGenerator/App.jsx";
+import App from "../../components/tools/whatsappLinkGenerator/App.jsx";
 import BaseHead from "../../components/BaseHead.astro";
 ---
 
@@ -25,6 +25,8 @@ import BaseHead from "../../components/BaseHead.astro";
   <!-- Google Analitycs -->
 
   <body>
-    <App  client:visible  />
+    <App client:load />
+    <App client:visible />
+    <App client:only="react" />
   </body>
 </html>
