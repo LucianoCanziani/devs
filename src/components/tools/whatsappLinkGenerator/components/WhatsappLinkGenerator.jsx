@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/material.css'
 import { ToastContainer, toast } from 'react-toastify';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import 'react-toastify/dist/ReactToastify.css';
 
 import Codes from "../data/Codes"
