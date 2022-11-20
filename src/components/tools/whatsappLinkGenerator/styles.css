@@ -175,16 +175,38 @@ input[type=number] {
 
 /* PHONE INPUT */
 
-.form-control {
-  width: 100% !important;
+.css-i44wyl {
+  background-color: white !important;
+  border-radius: 5px !important;
 }
 
-.form-control:focus {
+.css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root {
+  background-color: white !important;
+}
+.css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root:focus {
+  border: none !important;
+}
+.css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input:focus {
   border: 1px solid #CACACA !important;
-  box-shadow: 0 0 0 1px #1976d200 !important;
 }
 
-.phone-input:focus {
+input:focus {
+  border: 1px solid #CACACA !important;
+}
+
+.MuiTelInput-TextField:focus {
+  border: 1px solid #CACACA !important;
+}
+
+.MuiTelInput-TextField:focus {
+  border: 1px solid #CACACA !important;
+}
+
+.MuiTelInput-TextField:focus {
+  border: 1px solid #CACACA !important;
+}
+
+.MuiTelInput-TextField:focus {
   border: 1px solid #CACACA !important;
 }
 
@@ -203,9 +225,11 @@ h1 {
   justify-content: flex-start;
   margin-top: 25px;
 }
-.message-item{
+
+.message-item {
   margin-left: 80px;
 }
+
 li {
   display: flex;
   align-items: center;
@@ -244,7 +268,8 @@ mark {
     align-items: center;
     padding: 0% 2%;
   }
-  .message-item{
+
+  .message-item {
     margin-left: 0px;
   }
 

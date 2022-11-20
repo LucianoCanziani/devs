@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
-import  WhatsappLinkGenerator  from './components/WhatsappLinkGenerator';
-import Info  from './components/Info';
+import WhatsappLinkGenerator from './components/WhatsappLinkGenerator.jsx';
+import Info from './components/Info.jsx';
 import { ToastContainer, toast } from 'react-toastify';
 const App = () => {
 

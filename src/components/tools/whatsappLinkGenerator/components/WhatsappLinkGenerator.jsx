@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/material.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { MuiTelInput } from 'mui-tel-input'
 import Codes from "../data/Codes"
-
+import {  styled } from "@mui/material";
 
 
 const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
@@ -29,13 +27,15 @@ const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
       });
     } else {
       let customMessage = message;
+      let customPhone = number;
+      let customPhoneSpace = customPhone.replaceAll(" ", "")
       Codes && Codes.map((code, index) => {
         if (customMessage.includes(code.content)) {
           let messageReplace = customMessage.replaceAll(code.content, code.replace)
           customMessage = messageReplace
         }
       })
-      setLink(`https://api.whatsapp.com/send?phone=${number}${customMessage ? "&text=" + customMessage + "%20" : ""}`)
+      setLink(`https://api.whatsapp.com/send?phone=${customPhoneSpace.replaceAll("+", "")}${customMessage ? "&text=" + customMessage + "%20" : ""}`)
     }
   };
   const copyLink = (e) => {
@@ -66,7 +66,7 @@ const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
     }
   }
 
-
+console.log("numdae",number)
   return (
     <div>
       <form onSubmit={onSubmit} className="form">
@@ -74,7 +74,7 @@ const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
           htmlFor="phone"
           className="input-label"
         >What's your phone number?</label>
-        <PhoneInput
+        {/* <PhoneInput
           id="phone"
           specialLabel={''}
           country={'us'}
@@ -82,7 +82,8 @@ const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
           inputClass="phone-input"
           placeholder={"What's your phone number?"}
           onChange={(phone) => setNumber(phone)}
-        />
+        /> */}
+        <MuiTelInput value={number} defaultCountry="US"   onChange={(phone) => setNumber(phone)} />
         <label
           htmlFor="phone"
           className="input-label-remind"
