@@ -95,7 +95,7 @@ const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
           htmlFor="message"
           className="input-label label-message"
         >
-          What message do you want your customers to see when they contact you? (optional)
+          Create a custom message for your customers to see when they contact you (optional)
         </label>
         <textarea
           name="message"

@@ -3,8 +3,8 @@ import React from 'react';
 const NavBar = () => {
 
     return (
-        <nav class="NavBar">
-            <a href="https://www.operationdev.com/" class="logo-link"><img src="/Arimo.png" height="50px" width="43px" alt="Operation Dev Logo" /></a>
+        <nav className="NavBar">
+            <a href="https://www.operationdev.com/" className="logo-link"><img src="/Arimo.png" height="50px" width="43px" alt="Operation Dev Logo" /></a>
             <div>
                 <a href="https://www.operationdev.com/">Home</a>
                 <a href="https://www.operationdev.com/blog/">Blog</a>

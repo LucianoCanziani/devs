@@ -6,7 +6,7 @@ const Info = () => {
         <div style={{width: "100%"}}>
             <div className='info-cont'>
                 <h1><mark>WhatsApp</mark> Link Generator</h1>
-                <h2>Create Custom Messages</h2>whatsapp link generator with message
+                <h2>Create Custom Messages</h2>
                 <p>Are you looking to generate a <mark>WhatsApp</mark> link with a personalized message?</p>
                 <p>By just typing your phone number and a message if you want we will generate a link that, when your customer clicks on it, will take them to your <mark>WhatsApp</mark> chat and show a custom message.</p>
                 <ul className='message-item-cont'>

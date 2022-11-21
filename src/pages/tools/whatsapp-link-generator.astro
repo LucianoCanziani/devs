@@ -13,14 +13,25 @@ import BaseHead from "../../components/BaseHead.astro";
       author="Operation Dev"
       image="/mainImage/WhatsApp Link Free Generator, Create Custom Messages.webp"
       imagealt="WhatsApp Link Free Generator, Create Custom Messages"
-      />
+    />
 
+    <script
+      async
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-KD48BQTC6N"
+    ></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KD48BQTC6N");
+    </script>
   </head>
 
-
   <body>
-    <main>
-      <App client:only="react" />
-    </main>
+    <App client:only="react" />
   </body>
 </html>

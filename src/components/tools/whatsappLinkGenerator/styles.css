@@ -6,6 +6,8 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -46,16 +48,18 @@ a.active {
     margin-right: 10px;
   }
 }
-
+main{
+  color: #26272c !important;
+}
 /* Footer */
 footer {
   padding: 25px 0px;
   text-align: center;
   color: antiquewhite;
   background-color: #202A44;
-   position: absolute;
+  position: absolute;
   bottom: -70px;
-  left: 0px; 
+  left: 0px;
   width: 100%;
 }
 
@@ -67,9 +71,7 @@ footer {
   padding-bottom: 0%;
 }
 
-p {
-  font-size: 20px;
-}
+
 
 .whatsapp-tool-cont2 {
   display: flex;
@@ -265,7 +267,49 @@ input:focus {
 }
 
 h1 {
-  font-size: 39px
+  color: #26272c !important;
+  font-size: 39px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: #26272c !important;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 19px;
+  font-family: "Source Sans Pro";
+}
+
+.section-wsp-cont {
+  max-width: 1180px;
+  margin: 0px auto;
+  margin-top: 125px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: row-reverse;
+}
+
+.body-subtitle {
+  position: absolute;
+  top: -77px;
+  left: 0px;
+  font-size: 52px;
+  font-family: "Source Sans Pro";
+  font-weight: 900;
+  margin: 0px;
+}
+
+.media-cont {
+  width: 575px;
+  height: 315px;
+}
+
+.text-cont {
+  width: 500px;
 }
 
 .message-item-cont {
@@ -295,13 +339,72 @@ mark {
   background-color: #0000 !important;
 }
 
+@media only screen and (max-width: 967px) {
+  .section-wsp-cont {
+    max-width: 1180px;
+    margin: 0px auto;
+    margin-top: 80px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .body-subtitle {
+    position: relative;
+    top: 0px;
+    font-family: "Source Sans Pro";
+    font-weight: 900;
+    margin: 0px;
+    margin-bottom: 22px !important;
+  }
+
+  .media-cont{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .media-cont iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video {
+    width: 560px;
+    height: 315px;
+  }
+
+  .text-cont {
+    margin-top: 22px;
+    width: 90%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .body-subtitle {
+    position: relative;
+    top: 0px;
+    font-size: 40px;
+    font-family: "Source Sans Pro";
+    font-weight: 900;
+    margin: 0px;
+    margin-bottom: 22px !important;
+    white-space: nowrap;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .whatsapp-tool-cont {
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
-    padding: 2%;
-    padding-bottom: 0%;
+    padding: 0% 2%;
+
   }
 }
 
