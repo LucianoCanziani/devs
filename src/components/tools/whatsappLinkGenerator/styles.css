@@ -20,12 +20,55 @@ body {
   color: #1a202a;
 }
 
+/* NAV BAR */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #2e3748;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+a.active {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 780px) {
+  a {
+    margin-right: 10px;
+  }
+}
+
+/* Footer */
+footer {
+  padding: 25px 0px;
+  text-align: center;
+  color: antiquewhite;
+  background-color: #202A44;
+   position: absolute;
+  bottom: -70px;
+  left: 0px; 
+  width: 100%;
+}
+
 .whatsapp-tool-cont {
   display: flex;
   justify-content: space-evenly;
   /* align-items: center; */
   padding: 2%;
   padding-bottom: 0%;
+}
+
+p {
+  font-size: 20px;
 }
 
 .whatsapp-tool-cont2 {
@@ -43,6 +86,10 @@ body {
   padding: 40px;
   background: #0f0f0f;
   border-radius: 30px;
+}
+
+.MuiTelInput-Menu {
+  width: 350px;
 }
 
 .label-message {
@@ -69,6 +116,7 @@ body {
   padding: 50px 40px;
   background: #0f0f0f;
   border-radius: 30px;
+  margin: 0px auto;
 }
 
 .clipboard-cont {
@@ -183,9 +231,11 @@ input[type=number] {
 .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root {
   background-color: white !important;
 }
+
 .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root:focus {
   border: none !important;
 }
+
 .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input:focus {
   border: 1px solid #CACACA !important;
 }
@@ -275,6 +325,7 @@ mark {
 
   .form {
     width: 100%;
+    padding: 40px 25px;
   }
 
   .info-cont {
@@ -303,7 +354,7 @@ mark {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 50px 40px;
+    padding: 20px 25px;
     background: #0f0f0f;
     border-radius: 30px;
   }
@@ -328,5 +379,11 @@ mark {
     margin-top: 25px;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 38px;
   }
 }

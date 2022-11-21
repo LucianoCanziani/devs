@@ -28,7 +28,8 @@
     "mui-tel-input": "^2.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-toastify": "^9.1.1"
+    "react-toastify": "^9.1.1",
+    "url-encode-decode": "^1.0.0"
   },
   "devDependencies": {
     "astro-compress": "1.0.9",

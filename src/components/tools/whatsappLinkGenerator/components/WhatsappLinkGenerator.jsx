@@ -3,10 +3,10 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { MuiTelInput } from 'mui-tel-input'
 import Codes from "../data/Codes"
-import {  styled } from "@mui/material";
 
 
 const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
+
   const [link, setLink] = useState("")
   const [number, setNumber] = useState("")
   const [message, setMessage] = useState("")
@@ -30,12 +30,13 @@ const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
       let customPhone = number;
       let customPhoneSpace = customPhone.replaceAll(" ", "")
       Codes && Codes.map((code, index) => {
-        if (customMessage.includes(code.content)) {
+        if (code.content && customMessage.includes(code.content)) {
           let messageReplace = customMessage.replaceAll(code.content, code.replace)
           customMessage = messageReplace
+          //console.log("customMessage",customMessage)
         }
       })
-      setLink(`https://api.whatsapp.com/send?phone=${customPhoneSpace.replaceAll("+", "")}${customMessage ? "&text=" + customMessage + "%20" : ""}`)
+      setLink(`https://api.whatsapp.com/send?phone=${customPhoneSpace.replaceAll("+", "")}${customMessage ? "&text=" + customMessage : ""}`)
     }
   };
   const copyLink = (e) => {
@@ -66,9 +67,8 @@ const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
     }
   }
 
-console.log("numdae",number)
   return (
-    <div>
+    <div style={{width: "100%"}}>
       <form onSubmit={onSubmit} className="form">
         <label
           htmlFor="phone"
@@ -88,7 +88,7 @@ console.log("numdae",number)
           htmlFor="phone"
           className="input-label-remind"
         >
-          Don't forget to add area code as well as choosing your country.
+          Don't forget to add your area code as well as choosing your country.
         </label>
 
         <label

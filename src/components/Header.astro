@@ -1,6 +1,6 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import Logo from '../../public/Arimo.png';
+import Logo from "../../public/Arimo.png";
 import { SITE_TITLE } from "../config";
 /*
 <h2>
@@ -12,9 +12,8 @@ import { SITE_TITLE } from "../config";
 <style>
   header {
     margin: 0em 0 2em;
-
   }
-  header div{
+  header div {
     white-space: nowrap;
   }
   h2 {
@@ -26,18 +25,17 @@ import { SITE_TITLE } from "../config";
     text-decoration: none;
     padding-bottom: 8px;
   }
-  .logo-link{
+  .logo-link {
     padding: 0px;
   }
-
 
   .NavBar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-padding-top: 20px;
+    padding-top: 20px;
   }
-  .NavBar a{
+  .NavBar a {
     margin: 0px;
   }
   div a {
@@ -46,17 +44,20 @@ padding-top: 20px;
   }
   @media only screen and (max-width: 780px) {
     header {
-    margin: 0em;
+      margin: 0em;
+    }
   }
-      }
 </style>
 <header>
   <nav class="NavBar">
-    <HeaderLink href="https://www.operationdev.com/" class="logo-link"><img src={Logo} height="50px" width="43px" alt="Operation Dev Logo" /></HeaderLink>
+    <HeaderLink href="https://www.operationdev.com/" class="logo-link"
+      ><img src={Logo} height="50px" width="43px" alt="Operation Dev Logo" />
+    </HeaderLink>
     <div>
       <HeaderLink href="https://www.operationdev.com/">Home</HeaderLink>
       <HeaderLink href="https://www.operationdev.com/blog/">Blog</HeaderLink>
-     <!-- <HeaderLink href="/about">About</HeaderLink> -->
+      <HeaderLink href="https://www.operationdev.com/tools/">Tools</HeaderLink>
+      <!-- <HeaderLink href="/about">About</HeaderLink> -->
     </div>
   </nav>
 </header>
