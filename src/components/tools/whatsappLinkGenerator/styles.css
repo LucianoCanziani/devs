@@ -391,13 +391,13 @@ mark {
   .section-wsp-cont2 {
     max-width: 1180px;
     margin: 0 auto;
-    margin-top: 125px!important;
+    margin-top: 125px !important;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     position: relative;
-    flex-direction: row;
-}
+    flex-direction: column;
+  }
 
   .body-subtitle2 {
     position: relative;
@@ -560,7 +560,7 @@ mark {
     margin: 35px 0px;
     margin-top: 55px;
     align-items: center;
-}
+  }
 
   li span {
     padding-left: 10px;
