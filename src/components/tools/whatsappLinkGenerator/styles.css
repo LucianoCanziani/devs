@@ -390,14 +390,14 @@ mark {
 
   .section-wsp-cont2 {
     max-width: 1180px;
-    margin: 0px auto;
-    margin-top: 40px !important;
+    margin: 0 auto;
+    margin-top: 125px!important;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     position: relative;
-    flex-direction: column;
-  }
+    flex-direction: row;
+}
 
   .body-subtitle2 {
     position: relative;
