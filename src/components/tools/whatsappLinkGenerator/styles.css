@@ -296,7 +296,7 @@ p {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .body-subtitle {
