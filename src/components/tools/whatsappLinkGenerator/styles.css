@@ -407,6 +407,7 @@ mark {
     font-weight: 900;
     margin: 0px;
     margin-bottom: 22px !important;
+    text-align: center;
   }
 
   .bitly-img {
@@ -432,6 +433,7 @@ mark {
     font-weight: 900;
     margin: 0px;
     margin-bottom: 22px !important;
+    text-align: center;
   }
 
   .media-cont {
@@ -591,7 +593,6 @@ mark {
     font-weight: 900;
     margin: 0px;
     margin-bottom: 22px !important;
-    white-space: nowrap;
   }
 
   .body-subtitle2 {
@@ -602,7 +603,7 @@ mark {
     font-weight: 900;
     margin: 0px;
     margin-bottom: 22px !important;
-    white-space: nowrap;
+
   }
 
   h1 {
