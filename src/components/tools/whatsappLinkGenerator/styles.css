@@ -365,10 +365,12 @@ p {
 .message-item {
   margin-left: 80px;
 }
+
 textarea::placeholder {
   opacity: .5;
   color: red;
 }
+
 li {
   display: flex;
   align-items: center;
@@ -386,7 +388,7 @@ mark {
 
 @media only screen and (max-width: 1137px) {
 
-  .section-wsp-cont2{
+  .section-wsp-cont2 {
     max-width: 1180px;
     margin: 0px auto;
     margin-top: 40px !important;
@@ -396,7 +398,8 @@ mark {
     position: relative;
     flex-direction: column;
   }
-  .body-subtitle2{
+
+  .body-subtitle2 {
     position: relative;
     top: 0px;
     right: 0px;
@@ -405,10 +408,12 @@ mark {
     margin: 0px;
     margin-bottom: 22px !important;
   }
+
   .bitly-img {
     width: 100%;
     height: auto;
-}
+  }
+
   .section-wsp-cont {
     max-width: 1180px;
     margin: 0px auto;
@@ -456,31 +461,12 @@ mark {
   }
 }
 
-@media only screen and (max-width: 490px) {
-  .body-subtitle {
-    position: relative;
-    top: 0px;
-    font-size: 40px;
-    font-family: "Source Sans Pro";
-    font-weight: 900;
-    margin: 0px;
-    margin-bottom: 22px !important;
-    white-space: nowrap;
-  }
-  .body-subtitle2{
-    position: relative;
-    top: 0px;
-    font-size: 40px;
-    font-family: "Source Sans Pro";
-    font-weight: 900;
-    margin: 0px;
-    margin-bottom: 22px !important;
-    white-space: nowrap;
-  }
-  h1 {
-    margin-top: 0px;
+.message-icon {
+  width: 32px;
+  height: 32px;
 }
-}
+
+
 
 @media only screen and (max-width: 1200px) {
   .whatsapp-tool-cont {
@@ -557,20 +543,70 @@ mark {
   }
 }
 
-@media only screen and (max-width: 450px) {
-  .message-item-cont {
-    list-style: none;
-    display: flex;
-    padding: 0px;
-    justify-content: space-between;
-    margin-top: 25px;
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 
 @media only screen and (max-width: 400px) {
   h1 {
     font-size: 38px;
   }
+}
+
+@media only screen and (max-width: 490px) {
+  .message-item-cont {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+    margin: 35px 0px;
+    margin-top: 55px;
+    align-items: center;
+}
+
+  li span {
+    padding-left: 10px;
+    font-size: 20px;
+    padding: 0px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 110px;
+  }
+
+  .message-li {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .message-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .body-subtitle {
+    position: relative;
+    top: 0px;
+    font-size: 40px;
+    font-family: "Source Sans Pro";
+    font-weight: 900;
+    margin: 0px;
+    margin-bottom: 22px !important;
+    white-space: nowrap;
+  }
+
+  .body-subtitle2 {
+    position: relative;
+    top: 0px;
+    font-size: 40px;
+    font-family: "Source Sans Pro";
+    font-weight: 900;
+    margin: 0px;
+    margin-bottom: 22px !important;
+    white-space: nowrap;
+  }
+
+  h1 {
+    margin-top: 0px;
+  }
+
 }
