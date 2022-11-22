@@ -290,13 +290,13 @@ p {
 
 .section-wsp-cont2 {
   max-width: 1180px;
-  margin: 0px auto;
-  margin-top: 125px !important;
+  margin: 0 auto;
+  margin-top: 65px!important;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .body-subtitle {
