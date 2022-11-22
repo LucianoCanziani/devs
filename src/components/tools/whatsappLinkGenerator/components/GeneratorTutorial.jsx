@@ -21,7 +21,7 @@ const GeneratorTutorial = () => {
                 <p>How Does Whatsapp Link Generator Work?</p>
                 <p>You just have to select your country code, area code, and your full phone number. Remember to just add numbers in the phone input.</p>
                 <p>The message input is optional, but you can add a predefined text that your customers will see when they contact you.</p>
-                <p>We support all the letters from A-Z, special characters like "@", and all the Whatsapp emojis.</p>
+                <p>We support all the letters from A-Z, special characters like "@", and all the Whatsapp emojis 😉.</p>
             </div>
 
         </div>

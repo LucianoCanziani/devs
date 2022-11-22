@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { MuiTelInput } from 'mui-tel-input'
 import Codes from "../data/Codes"
 
 
-const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
+const WhatsappLinkGenerator = () => {
 
   const [link, setLink] = useState("")
+
   const [number, setNumber] = useState("")
   const [message, setMessage] = useState("")
-  //console.log("Codes",Codes)
+
+
   const onSubmit = (e) => {
     e.preventDefault();
 
@@ -36,7 +38,8 @@ const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
           //console.log("customMessage",customMessage)
         }
       })
-      setLink(`https://api.whatsapp.com/send?phone=${customPhoneSpace.replaceAll("+", "")}${customMessage ? "&text=" + customMessage : ""}`)
+      setLink(`https://wa.me/${customPhoneSpace.replaceAll("+", "")}${customMessage ? "?text=" + customMessage : ""}`)
+
     }
   };
   const copyLink = (e) => {
@@ -68,22 +71,14 @@ const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
   }
 
   return (
-    <div style={{width: "100%"}}>
+    <div style={{ width: "100%" }}>
       <form onSubmit={onSubmit} className="form">
         <label
           htmlFor="phone"
           className="input-label"
         >What's your phone number?</label>
-        {/* <PhoneInput
-          id="phone"
-          specialLabel={''}
-          country={'us'}
-          value={number}
-          inputClass="phone-input"
-          placeholder={"What's your phone number?"}
-          onChange={(phone) => setNumber(phone)}
-        /> */}
-        <MuiTelInput value={number} defaultCountry="US"   onChange={(phone) => setNumber(phone)} />
+
+        <MuiTelInput value={number} defaultCountry="US" onChange={(phone) => setNumber(phone)} />
         <label
           htmlFor="phone"
           className="input-label-remind"
@@ -101,7 +96,7 @@ const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
           name="message"
           id="message"
           className="input"
-          placeholder="Here can go your message"
+          placeholder="Hello, I have a question about..."
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
         <button className="send-btn" type="submit">
@@ -131,6 +126,7 @@ const WhatsappLinkGenerator = ({ /* OpenLink */ }) => {
           :
           null
       }
+
     </div >
   );
 };

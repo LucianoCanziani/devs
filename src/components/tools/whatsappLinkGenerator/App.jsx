@@ -3,6 +3,7 @@ import './styles.css';
 import WhatsappLinkGenerator from './components/WhatsappLinkGenerator.jsx';
 /* import Info from './components/Info.jsx'; */
 import GeneratorTutorial from './components/GeneratorTutorial.jsx';
+import ShortAndLong from './components/ShortAndLong.jsx';
 import NavBar from './components/NavBar.jsx';
 import Footer from './components/Footer.jsx';
 import { ToastContainer, toast } from 'react-toastify';
@@ -19,7 +20,7 @@ const App = () => {
                         <h1>WhatsApp Link Generator</h1>
                         <h2>Create Custom Messages</h2>
                         <p>Are you looking to generate a <mark>WhatsApp</mark> link with a personalized message?</p>
-                        <p>By just typing your phone number and a message if you want we will generate a link that, when your customer clicks on it, will take them to your <mark>WhatsApp</mark> chat and show a custom message.</p>
+                        <p>By just typing your phone number you can get a link that will lead your customers directly to your <mark>WhatsApp</mark> chat. You can also add a custom message to break the ice.</p>
                         <ul className='message-item-cont'>
 
                             <li>
@@ -41,6 +42,7 @@ const App = () => {
                 {/* <Info /> */}
             </div>
             <GeneratorTutorial />
+            <ShortAndLong />
             <Footer />
             <ToastContainer />
         </main>
