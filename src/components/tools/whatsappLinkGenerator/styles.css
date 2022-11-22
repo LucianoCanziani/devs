@@ -291,7 +291,7 @@ p {
 .section-wsp-cont2 {
   max-width: 1180px;
   margin: 0 auto;
-  margin-top: 65px!important;
+  margin-top: 145px!important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -391,7 +391,7 @@ mark {
   .section-wsp-cont2 {
     max-width: 1180px;
     margin: 0 auto;
-    margin-top: 125px !important;
+    margin-top: 65px !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
