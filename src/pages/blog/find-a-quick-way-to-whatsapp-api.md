@@ -7,7 +7,7 @@ heroImage: "/mainImage/Whatsapp-API-For-Websites.png"
 tags: " whatsapp, api, Whatsapp api,messaging,web development, programming"
 author: "Luciano Canziani"
 imgAlt: "Whatsapp API For Websites"
-type: "API"
+type: "Whatsapp"
 ---
 
 ## Table Content

@@ -97,16 +97,22 @@ const relatedArticles = posts.filter(post => post.type === type);
       }
     </style>
   </head>
-<!-- Google Analitycs -->
+  <!-- Google Analitycs -->
 
-<script async type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-KD48BQTC6N"></script>
-<script type="text/partytown">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    type="text/partytown"
+    src="https://www.googletagmanager.com/gtag/js?id=G-KD48BQTC6N"
+  ></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-KD48BQTC6N');
-</script>
+    gtag("config", "G-KD48BQTC6N");
+  </script>
 
   <body>
     <Header />
@@ -119,7 +125,12 @@ const relatedArticles = posts.filter(post => post.type === type);
         }
         <h1 class="title">{title}</h1>
         <div class="author-date">
-          {author && <p>{author}</p>}
+          <a
+            style="text-decoration: none;
+          color: #2d202a;"
+            href="https://www.linkedin.com/in/luciano-canziani/"
+            target="_blank">{author && <p>{author}</p>}</a
+          >
           {pubDate && <time> | {pubDate}</time>}
         </div>
         {
