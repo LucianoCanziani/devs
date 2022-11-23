@@ -37,4 +37,5 @@ You just have two follow these quick steps.
 <img src="/imgExamples/Whatsapp Link Generator - Copy Your Whatsapp Link.webp" alt="Whatsapp Link Generator - Copy Your Whatsapp Link" class="img-center" style="margin-bottom: 30px" />
 
 And that will be it.
+
 If you finish this short tutorial and can't wait to use the best Whatsapp Link Generator on the web you can give it a try by clicking <a href="https://www.operationdev.com/tools/whatsapp-link-free-generator-create-custom-messages/" target=”_blank”>here</a>.
