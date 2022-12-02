@@ -55,7 +55,7 @@ Now you should add an `a` tag wrapping the `span`.
 </a>
 ```
 
-Inside of it you should add the `href` (hypertext reference) and inside of it pasting your link.
+Inside of it you should add the `href` (hypertext reference) and you should past your link in it.
 
 By using the `target="_blank"`, it will open the link in a new window instead of taking your customers out of your site.
 
