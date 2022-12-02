@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: "How to Create a Whatsapp Link for My Number?"
-description: "Create a Professional Whatsapp link to take your potential customers to your chat with a predefined message. With this quick guide, you will learn how to use our Whatsapp Link Generator."
+description: "Create a Professional Whatsapp link to take your potential customers to your chat with a predefined message."
 pubDate: "Nov 22 2022"
 heroImage: "/mainImage/Whatsapp Link Generator - Create Your Custom Links.webp"
 tags: "WhatsApp Link Generator,WhatsApp Link Free Generator,Custom Messages,whatsapp link to message,free whatsapp link,whatsapp link number,best whatsapp link generator,api whatsapp link,whatsapp me link,short whatsapp link generator,whatsapp link share,whatsapp link number,whatsapp link generator with message,business whatsapp link generator,whatsapp number link generator,whatsapp link code"
