@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/BlogPost.astro"
-title: "Get All Checked Checkboxes JavaScript"
+title: "Get All Checked Checkboxes in JavaScript"
 description: "Select all the checked checkboxes and push their values into an array. With the use of DOM, you can select all checkboxes and loop them through a forEach to select only the checked ones and push them into an array."
 pubDate: "Dec 30 2022"
 heroImage: "/mainImage/Get All Checked Checkboxes in JavaScript.webp"
@@ -37,7 +37,7 @@ checkboxes.forEach((checkbox) => {
 });
 ```
 
-And that's it! You now have an array of the values of all checked checkboxes in the form.
+And that's it! You now have an array of the values of all checked checkboxes.
 
 ## Complete Code Snippet
 
