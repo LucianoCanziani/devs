@@ -23,7 +23,7 @@ Follow these steps to set the default date to tomorrow's date in JavaScript:
 let today = new Date();
 ```
 
-2. Create a variable called tomorrow and assign the today variable value.
+2. Create a variable called tomorrow and assign him the today variable value.
 
 ```js
 let tomorrow = new Date(today);
